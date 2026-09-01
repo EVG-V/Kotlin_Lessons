@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.0.20"
+    application
 }
 
 group = "ru.otus"
@@ -18,4 +19,8 @@ tasks.test {
 }
 kotlin {
     jvmToolchain(20)
+}
+
+application {
+    mainClass.set("ru.otus.MainKt")
 }
